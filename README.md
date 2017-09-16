@@ -86,14 +86,17 @@ Server side will run on port 3001 and client side on port 3000 to avoid conflict
 
 2. Start the server side application:
 
-	1. Open terminal and, from bank-app folder:
+	Open terminal from bank-app folder:
+
 
 	```
 	cd bank-app-server
 	npm start
 	```
 
-	2. Once server has started, the console should show a message like this:
+
+	Once server has started, the console should show a message like this:
+
 
 	```
 	npm start
@@ -105,18 +108,23 @@ Server side will run on port 3001 and client side on port 3000 to avoid conflict
 	Executing (default): SHOW INDEX FROM `charges`
 	```
 
+
 	The server will synchronyze automatically the database table and will create it if doesn´t exist.
+
 
 3. Start the client side application:
 
-	1. Open terminal and, from bank-app folder:
+	Open terminal and bank-app folder:
+
 
 	```
 	cd bank-app-client
 	npm start
 	```
 
-	2. Once client has started, the console should show a message like this:
+
+	Once client has started, the console should show a message like this:
+
 
 	```
 	Compiled successfully!
@@ -130,5 +138,14 @@ Server side will run on port 3001 and client side on port 3000 to avoid conflict
 	To create a production build, use npm run build.
 	```
 
+
 	You will be redirected to ```http://localhost:3000/``` on your default browser.
+
+## Authors
+
+* **Esteban Martín Busto**
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
