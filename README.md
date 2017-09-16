@@ -91,6 +91,7 @@ Server side will run on port 3001 and client side on port 3000 to avoid conflict
 
 	```
 	cd bank-app-server
+	npm install
 	npm start
 	```
 
@@ -119,6 +120,7 @@ Server side will run on port 3001 and client side on port 3000 to avoid conflict
 
 	```
 	cd bank-app-client
+	npm install
 	npm start
 	```
 
