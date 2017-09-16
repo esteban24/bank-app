@@ -1,22 +1,22 @@
 {
   "development": {
-    "username": "bank-app",
-    "password": "12345",
-    "database": "bank-app",
-    "host": "localhost",
+    "username": "root",
+    "password": "password",
+    "database": "development-database",
+    "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
-    "username": "bank-app",
-    "password": "12345",
-	  "database": "bank-app",
+    "username": "root",
+    "password": "password",
+	  "database": "test-database",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
-    "username": "bank-app",
-    "password": "12345",
-	  "database": "bank-app",
+    "username": "root",
+    "password": "password",
+	  "database": "production-database",
     "host": "127.0.0.1",
     "dialect": "mysql"
   }
