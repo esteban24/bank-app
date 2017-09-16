@@ -1,0 +1,12 @@
+/bank-app-*/node_modules
+/bank-app-*/coverage
+/bank-app-*/build
+/bank-app-*/.DS_Store
+/bank-app-*/.env.local
+/bank-app-*/.env.development.local
+/bank-app-*/.env.test.local
+/bank-app-*/.env.production.local
+/bank-app-*/npm-debug.log*
+/bank-app-*/yarn-debug.log*
+/bank-app-*/yarn-error.log*
+
