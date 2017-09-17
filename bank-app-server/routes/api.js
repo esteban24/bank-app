@@ -1,18 +1,26 @@
 var express = require('express');
 var router = express.Router();
-var db = require('../db')
+var models = require('../models')
 
 router.get('/api/charges', function(req, res){
-    db.findAll().then(result => {
-    	res.send(200, result);
+    models.Charge.findAll()
+    .then(result => {
+    	res.status(200).json(result);
+	})
+	.catch(err => {
+		res.status(500).json({ status: 500, message: 'internal server error' });
 	});
 });
 
 router.post('/api/charges', function(req, res) {
-	var charge = { id: null, description: req.body.description, amount: req.body.amount, createdAt: new Date(), updatedAt: new Date()};
+	var charge = { description: req.body.description, amount: req.body.amount };
 
-	db.create(charge).then(result => {
-		res.send(201, {});
+	models.Charge.create(charge)
+	.then(result => {
+		res.status(201).json({});
+	})
+	.catch(err => {
+		res.status(500).json({ status: 500, message: 'internal server error' });
 	})
 });
 

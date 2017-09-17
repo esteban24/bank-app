@@ -1,0 +1,23 @@
+[
+    {
+        "model": "Charge",
+        "data": {
+            "description": "Netflix subscription",
+            "amount": 12
+        }
+    },
+    {
+        "model": "Charge",
+        "data": {
+            "description": "HBO subscription",
+            "amount": 10.99
+        }
+    },
+    {
+        "model": "Charge",
+        "data": {
+            "description": "PSN subscription",
+            "amount": 59.95
+        }
+    }
+]

@@ -105,12 +105,20 @@ Server side will run on port 3001 and client side on port 3000 to avoid conflict
 	> bank-app@0.0.0 start /private/var/www/html/bank-app/bank-app-server
 	> node ./bin/www
 
-	Executing (default): CREATE TABLE IF NOT EXISTS `charges` (`id` INTEGER NOT NULL auto_increment , `description` VARCHAR(255), `amount` FLOAT, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
-	Executing (default): SHOW INDEX FROM `charges`
+	Executing (default): DROP TABLE IF EXISTS `charge`;
+	Executing (default): CREATE TABLE IF NOT EXISTS `charge` (`id` INTEGER NOT NULL auto_increment , `description` VARCHAR(255) NOT NULL, `amount` FLOAT NOT NULL, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+	Executing (default): SHOW INDEX FROM `charge` FROM `bank-app`
+	Fixtures: reading file fixtures/data.json...
+	Executing (default): SELECT `id`, `description`, `amount`, `created_at`, `updated_at` FROM `charge` AS `Charge` WHERE `Charge`.`description` = 'Netflix subscription' AND `Charge`.`amount` = 12 LIMIT 1;
+	Executing (default): INSERT INTO `charge` (`id`,`description`,`amount`,`created_at`,`updated_at`) VALUES (DEFAULT,'Netflix subscription',12,'2017-09-17 08:23:02','2017-09-17 08:23:02');
+	Executing (default): SELECT `id`, `description`, `amount`, `created_at`, `updated_at` FROM `charge` AS `Charge` WHERE `Charge`.`description` = 'HBO subscription' AND `Charge`.`amount` = 10.99 LIMIT 1;
+	Executing (default): INSERT INTO `charge` (`id`,`description`,`amount`,`created_at`,`updated_at`) VALUES (DEFAULT,'HBO subscription',10.99,'2017-09-17 08:23:02','2017-09-17 08:23:02');
+	Executing (default): SELECT `id`, `description`, `amount`, `created_at`, `updated_at` FROM `charge` AS `Charge` WHERE `Charge`.`description` = 'PSN subscription' AND `Charge`.`amount` = 59.95 LIMIT 1;
+	Executing (default): INSERT INTO `charge` (`id`,`description`,`amount`,`created_at`,`updated_at`) VALUES (DEFAULT,'PSN subscription',59.95,'2017-09-17 08:23:02','2017-09-17 08:23:02');
+	Executing (default): SELECT `id`, `description`, `amount`, `created_at`, `updated_at` FROM `charge` AS `Charge`;
 	```
 
-
-	The server will synchronyze automatically the database table and will create it if doesn´t exist.
+	The server will initialize automatically the database (drop and sync) and fixtures will be loaded from ```bank-app-server/fixtures/data.json```.
 
 
 3. Start the client side application:

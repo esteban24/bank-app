@@ -6,49 +6,61 @@ class Home extends Component {
     super(props);
 
     this.state = {
-      charges: []
+      charges: [],
+      err: false
     };
   }
 
   componentDidMount() {
     fetch('/api/charges')
       .then(res => res.json())
-      .then(charges => this.setState({ charges }));
+      .then(charges => this.setState({ charges }))
+      .catch(err => this.setState({ err }));
   }
 
   render() {
-    return (
-      <div className="Home">
-        <div className="panel panel-default">
-          <div className="panel-heading">
-            <h3 className="panel-title">Listado de gastos</h3>
+    if (this.state.err) {
+      return (
+        <div className="Home">
+          <div className="container-fluid">
+            <h3 >Error al cargar la página</h3>
           </div>
-          <div className="panel-body">
-            <table className="table table-responsive">
-              <thead>
-                <tr>
-                  <th>Descripción</th>
-                  <th>Cantidad</th>
-                </tr>
-              </thead>
-              <tbody>
-                {this.state.charges.map(charge =>
-                  <tr key={charge.id}>
-                    <td>{charge.description}</td>
-                    <td className="text-danger">- {charge.amount} €</td>
+        </div>
+      );
+    } else {
+      return (
+        <div className="Home">
+          <div className="panel panel-default">
+            <div className="panel-heading">
+              <h3 className="panel-title">Listado de gastos</h3>
+            </div>
+            <div className="panel-body">
+              <table className="table table-responsive">
+                <thead>
+                  <tr>
+                    <th>Descripción</th>
+                    <th>Cantidad</th>
                   </tr>
-                )}
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {this.state.charges.map(charge =>
+                    <tr key={charge.id}>
+                      <td>{charge.description}</td>
+                      <td className="text-danger">- {charge.amount} €</td>
+                    </tr>
+                  )}
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div className="container-fluid">
+            <Link to="/create">
+              <div className="btn btn-success" type="button"><span className="glyphicon glyphicon-plus"></span> Nuevo gasto</div>
+            </Link>
           </div>
         </div>
-        <div className="container-fluid">
-          <Link to="/create">
-            <div className="btn btn-success" type="button"><span className="glyphicon glyphicon-plus"></span> Nuevo gasto</div>
-          </Link>
-        </div>
-      </div>
-    );
+      );
+    }
   }
 }
 

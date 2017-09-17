@@ -4,16 +4,22 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var db = require(__dirname + '/db');
+var models = require(__dirname + '/models')
 
 var api = require(__dirname + '/routes/api');
 
 var app = express();
 
+const sequelize_fixtures = require('sequelize-fixtures');
+
 /**
  * Database sync
  */
-db.sync();
+models.sequelize.drop();
+models.sequelize.sync()
+.then(function(){
+	sequelize_fixtures.loadFile('fixtures/data.json', models);
+});
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -33,7 +39,6 @@ app.use(function(err, req, res, next) {
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  // render the error page
   res.status(err.status || 500);
   res.send('Internal server error');
 });
