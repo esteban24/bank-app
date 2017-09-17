@@ -29,21 +29,25 @@ bank-app
 |     ├── index.css
 |     ├── index.js
 |     └── registerServiceWorker.js
-└── bank-app-server
-   ├── app.js
-   ├── bin
-   |  └── www
-   ├── config
-   |  └── config.json
-   ├── fixtures
-   |  └── data.json
-   ├── models
-   |  ├── charge.js
-   |  └── index.js
-   ├── npm-debug.log
-   ├── package.json
-   └── routes
-      └── api.js
+├── bank-app-server
+|  ├── app.js
+|  ├── bin
+|  |  └── www
+|  ├── config
+|  |  └── config.json
+|  ├── fixtures
+|  |  └── data.json
+|  ├── models
+|  |  ├── charge.js
+|  |  └── index.js
+|  ├── npm-debug.log
+|  ├── package.json
+|  └── routes
+|     └── api.js
+└── images
+   ├── create.png
+   ├── list.png
+   └── main.png
 ```
 
 ## Dependencies
