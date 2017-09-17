@@ -155,6 +155,21 @@ Server side will run on port 3001 and client side on port 3000 to avoid conflict
 
 	You will be redirected to ```http://localhost:3000/``` on your default browser.
 
+## User guide
+
+At the begining, home blank page will be rendered.
+
+![alt text](images/main.png)
+
+If "Home" button is clicked, a list of preloaded charges will be shown.
+
+![alt text](images/list.png)
+
+The user can add a new charge by clicking on "Nuevo cargo" button.
+
+![alt text](images/create.png)
+
+
 ## Authors
 
 * **Esteban Martín Busto**

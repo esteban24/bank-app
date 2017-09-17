@@ -9,4 +9,4 @@
 /bank-app-*/npm-debug.log*
 /bank-app-*/yarn-debug.log*
 /bank-app-*/yarn-error.log*
-
+.DS_Store

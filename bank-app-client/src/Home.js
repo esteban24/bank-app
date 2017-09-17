@@ -32,7 +32,7 @@ class Home extends Component {
         <div className="Home">
           <div className="panel panel-default">
             <div className="panel-heading">
-              <h3 className="panel-title">Listado de gastos</h3>
+              <h3 className="panel-title">Listado de cargos</h3>
             </div>
             <div className="panel-body">
               <table className="table table-responsive">
@@ -55,7 +55,7 @@ class Home extends Component {
           </div>
           <div className="container-fluid">
             <Link to="/create">
-              <div className="btn btn-success" type="button"><span className="glyphicon glyphicon-plus"></span> Nuevo gasto</div>
+              <div className="btn btn-success" type="button"><span className="glyphicon glyphicon-plus"></span> Nuevo cargo</div>
             </Link>
           </div>
         </div>

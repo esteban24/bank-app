@@ -2,21 +2,21 @@
     {
         "model": "Charge",
         "data": {
-            "description": "Netflix subscription",
+            "description": "Suscripción Netflix",
             "amount": 12
         }
     },
     {
         "model": "Charge",
         "data": {
-            "description": "HBO subscription",
+            "description": "Suscripción HBO",
             "amount": 10.99
         }
     },
     {
         "model": "Charge",
         "data": {
-            "description": "PSN subscription",
+            "description": "Suscripción PSN",
             "amount": 59.95
         }
     }
