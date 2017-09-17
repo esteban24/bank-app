@@ -12,7 +12,6 @@
     "express": "~4.15.2",
     "morgan": "~1.8.1",
     "mysql2": "^1.4.2",
-    "pug": "~2.0.0-beta11",
     "sequelize": "^4.8.4",
     "sequelize-fixtures": "^0.6.0",
     "serve-favicon": "~2.4.2"

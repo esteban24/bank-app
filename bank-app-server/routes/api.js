@@ -8,7 +8,7 @@ router.get('/api/charges', function(req, res){
     	res.status(200).json(result);
 	})
 	.catch(err => {
-		res.status(500).json({ status: 500, message: 'internal server error' });
+		res.status(500).json({ status: 500, message: 'Internal server error' });
 	});
 });
 
@@ -20,7 +20,7 @@ router.post('/api/charges', function(req, res) {
 		res.status(201).json({});
 	})
 	.catch(err => {
-		res.status(500).json({ status: 500, message: 'internal server error' });
+		res.status(500).json({ status: 500, message: 'Internal server error' });
 	})
 });
 

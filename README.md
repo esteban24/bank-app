@@ -1,6 +1,6 @@
 ## Synopsis
 
-Simple app example using Express.JS (server-side) and React JS (client-side). Database models are managed by Sequelize (promise based ORM).
+Simple app example using Express.JS (server-side) and React JS (client-side). Database models are managed by Sequelize (promise based ORM) and MySQL.
 
 ## Folder structure
 
@@ -11,6 +11,7 @@ This project is simple, there are two folders inside "bank-app":
 
 ```
 bank-app
+├── LICENSE.md
 ├── README.md
 ├── bank-app-client
 |  ├── package.json
@@ -34,9 +35,12 @@ bank-app
    |  └── www
    ├── config
    |  └── config.json
-   ├── db.js
-   ├── model
-   |  └── charge.js
+   ├── fixtures
+   |  └── data.json
+   ├── models
+   |  ├── charge.js
+   |  └── index.js
+   ├── npm-debug.log
    ├── package.json
    └── routes
       └── api.js

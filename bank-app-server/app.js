@@ -30,7 +30,7 @@ app.use('/', api);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  res.send(404, { status: '404', message: 'not found' });
+  res.status(404).json({ status: '404', message: 'Not found' });
 });
 
 // error handler
@@ -39,8 +39,7 @@ app.use(function(err, req, res, next) {
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  res.status(err.status || 500);
-  res.send('Internal server error');
+  res.status(err.status || 500).json({ status: err.status || 500, message: 'Internal server error'});
 });
 
 module.exports = app;
