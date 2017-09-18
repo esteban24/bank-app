@@ -65,7 +65,7 @@ class Create extends Component {
                 </div>
                 <div className="form-group">
                   <label>Cantidad</label>
-                  <input type="number" className="form-control" name="amount" id="amount" placeholder="Introduzca una cantidad" required="required" value={this.state.amount} onChange={this.handleInputChange} min="1"/>
+                  <input type="number" className="form-control" name="amount" id="amount" placeholder="Introduzca una cantidad" required="required" value={this.state.amount} onChange={this.handleInputChange} min="1" step="0.01"/>
                   <small id="amountHelp" className="form-text text-muted">Introduzca una cantidad positiva.</small>
                 </div>
                 <button type="submit" className="btn btn-primary">Enviar</button>
