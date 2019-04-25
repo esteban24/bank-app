@@ -3,21 +3,18 @@
     "username": "root",
     "password": "password",
     "database": "development-database",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "sqlite"
   },
   "test": {
     "username": "root",
     "password": "password",
 	  "database": "test-database",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "sqlite"
   },
   "production": {
     "username": "root",
     "password": "password",
 	  "database": "production-database",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "sqlite"
   }
 }

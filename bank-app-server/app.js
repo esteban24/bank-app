@@ -15,7 +15,6 @@ const sequelize_fixtures = require('sequelize-fixtures');
 /**
  * Database sync
  */
-models.sequelize.drop();
 models.sequelize.sync()
 .then(function(){
 	sequelize_fixtures.loadFile('fixtures/data.json', models);

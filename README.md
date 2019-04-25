@@ -1,6 +1,6 @@
 ## Synopsis
 
-Simple app example using Express.JS (server-side) and React JS (client-side). Database models are managed by Sequelize (promise based ORM) and MySQL.
+Simple app example using Express.JS (server-side) and React JS (client-side). Database models are managed by Sequelize (promise based ORM).
 
 ## Folder structure
 
@@ -54,7 +54,6 @@ bank-app
 
 * npm - [3.10.8](https://docs.npmjs.com/getting-started/installing-node)
 * node - [v6.11.3](https://nodejs.org/es/download/)
-* mysql - [5.7.16](https://dev.mysql.com/downloads/mysql/)
 
 ## Installation guide
 
@@ -67,27 +66,24 @@ Server side will run on port 3001 and client side on port 3000 to avoid conflict
 
 	```
 	{
-	  "development": {
-	    "username": "app",
-	    "password": "password",
-	    "database": "development-database",
-	    "host": "127.0.0.1",
-	    "dialect": "mysql"
-	  },
-	  "test": {
-	    "username": "root",
-	    "password": "password",
-		  "database": "test-database",
-	    "host": "127.0.0.1",
-	    "dialect": "mysql"
-	  },
-	  "production": {
-	    "username": "root",
-	    "password": "password",
-		  "database": "production-database",
-	    "host": "127.0.0.1",
-	    "dialect": "mysql"
-	  }
+		"development": {
+			"username": "root",
+			"password": "password",
+			"database": "development-database",
+			"dialect": "sqlite"
+		},
+		"test": {
+			"username": "root",
+			"password": "password",
+			"database": "test-database",
+			"dialect": "sqlite"
+		},
+		"production": {
+			"username": "root",
+			"password": "password",
+			"database": "production-database",
+			"dialect": "sqlite"
+		}
 	}
 
 	```
@@ -113,17 +109,16 @@ Server side will run on port 3001 and client side on port 3000 to avoid conflict
 	> bank-app@0.0.0 start /private/var/www/html/bank-app/bank-app-server
 	> node ./bin/www
 
-	Executing (default): DROP TABLE IF EXISTS `charge`;
-	Executing (default): CREATE TABLE IF NOT EXISTS `charge` (`id` INTEGER NOT NULL auto_increment , `description` VARCHAR(255) NOT NULL, `amount` FLOAT NOT NULL, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
-	Executing (default): SHOW INDEX FROM `charge` FROM `bank-app`
+	Executing (default): CREATE TABLE IF NOT EXISTS `charge` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `description` VARCHAR(255) NOT NULL, `amount` FLOAT NOT NULL, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);
+	Executing (default): PRAGMA INDEX_LIST(`charge`)
 	Fixtures: reading file fixtures/data.json...
-	Executing (default): SELECT `id`, `description`, `amount`, `created_at`, `updated_at` FROM `charge` AS `Charge` WHERE `Charge`.`description` = 'Netflix subscription' AND `Charge`.`amount` = 12 LIMIT 1;
-	Executing (default): INSERT INTO `charge` (`id`,`description`,`amount`,`created_at`,`updated_at`) VALUES (DEFAULT,'Netflix subscription',12,'2017-09-17 08:23:02','2017-09-17 08:23:02');
-	Executing (default): SELECT `id`, `description`, `amount`, `created_at`, `updated_at` FROM `charge` AS `Charge` WHERE `Charge`.`description` = 'HBO subscription' AND `Charge`.`amount` = 10.99 LIMIT 1;
-	Executing (default): INSERT INTO `charge` (`id`,`description`,`amount`,`created_at`,`updated_at`) VALUES (DEFAULT,'HBO subscription',10.99,'2017-09-17 08:23:02','2017-09-17 08:23:02');
-	Executing (default): SELECT `id`, `description`, `amount`, `created_at`, `updated_at` FROM `charge` AS `Charge` WHERE `Charge`.`description` = 'PSN subscription' AND `Charge`.`amount` = 59.95 LIMIT 1;
-	Executing (default): INSERT INTO `charge` (`id`,`description`,`amount`,`created_at`,`updated_at`) VALUES (DEFAULT,'PSN subscription',59.95,'2017-09-17 08:23:02','2017-09-17 08:23:02');
-	Executing (default): SELECT `id`, `description`, `amount`, `created_at`, `updated_at` FROM `charge` AS `Charge`;
+	Executing (default): SELECT `id`, `description`, `amount`, `created_at`, `updated_at` FROM `charge` AS `Charge` WHERE `Charge`.`description` = 'Suscripción Netflix' AND `Charge`.`amount` = 12 LIMIT 1;
+	Executing (default): INSERT INTO `charge` (`id`,`description`,`amount`,`created_at`,`updated_at`) VALUES (NULL,'Suscripción Netflix',12,'2019-04-25 11:45:25.744 +00:00','2019-04-25 11:45:25.744 +00:00');
+	Executing (default): SELECT `id`, `description`, `amount`, `created_at`, `updated_at` FROM `charge` AS `Charge` WHERE `Charge`.`description` = 'Suscripción HBO' AND `Charge`.`amount` = 10.99 LIMIT 1;
+	Executing (default): INSERT INTO `charge` (`id`,`description`,`amount`,`created_at`,`updated_at`) VALUES (NULL,'Suscripción HBO',10.99,'2019-04-25 11:45:25.756 +00:00','2019-04-25 11:45:25.756 +00:00');
+	Executing (default): SELECT `id`, `description`, `amount`, `created_at`, `updated_at` FROM `charge` AS `Charge` WHERE `Charge`.`description` = 'Suscripción PSN' AND `Charge`.`amount` = 59.95 LIMIT 1;
+	Executing (default): INSERT INTO `charge` (`id`,`description`,`amount`,`created_at`,`updated_at`) VALUES (NULL,'Suscripción PSN',59.95,'2019-04-25 11:45:25.759 +00:00','2019-04-25 11:45:25.759 +00:00');
+
 	```
 
 	The server will initialize automatically the database (drop and sync) and fixtures will be loaded from ```bank-app-server/fixtures/data.json```.
