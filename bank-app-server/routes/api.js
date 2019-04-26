@@ -4,24 +4,56 @@ var models = require('../models')
 
 router.get('/api/charges', function(req, res){
     models.Charge.findAll()
-    .then(result => {
-    	res.status(200).json(result);
-	})
-	.catch(err => {
-		res.status(500).json({ status: 500, message: 'Internal server error' });
-	});
+	    .then(result => {
+	    	res.status(200).json(result);
+		})
+		.catch(err => {
+			handleError(err, res);
+		});
+});
+
+router.get('/api/charges/:chargeId', function(req, res){
+    models.Charge.findByPk(req.params.chargeId)
+	    .then(result => {
+	    	result == null ? res.status(404).json({ status: 404, message: "Not found"}) : res.status(200).json(result);
+		})
+		.catch(err => {
+			handleError(err, res);
+		});
 });
 
 router.post('/api/charges', function(req, res) {
-	var charge = { description: req.body.description, amount: req.body.amount };
+	let charge = { description: req.body.description, amount: req.body.amount };
 
 	models.Charge.create(charge)
-	.then(result => {
-		res.status(201).json({});
-	})
-	.catch(err => {
-		res.status(500).json({ status: 500, message: 'Internal server error' });
-	})
+		.then(result => {
+			res.status(201).json({ status: 201, message: "Created"});
+		})
+		.catch(err => {
+			handleError(err, res);
+		});
 });
+
+router.delete('/api/charges/:chargeId', function(req, res) {
+	models.Charge
+		.destroy({ where: { id: req.params.chargeId }})
+		.then(result => {
+			console.log(result);
+	    	result == 0 ? res.status(404).json({ status: 404, message: "Not found"}) : res.status(200).json(result);
+		})
+		.catch(err => {
+			handleError(err, res);
+		});
+})
+
+function handleError(error, response) {
+	let errorsArray = [];
+
+	error.errors.forEach(function(errorInstance) {
+		errorsArray.push(errorInstance.message)
+	});
+
+	response.status(500).json({ status: 500, messages: errorsArray });
+}
 
 module.exports = router;
