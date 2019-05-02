@@ -3,7 +3,11 @@ var router = express.Router();
 var models = require('../models')
 
 router.get('/api/charges', function(req, res){
-    models.Charge.findAll()
+	let offset = req.query.offset;
+	let limit = req.query.limit;
+
+	let properties = (offset !== null && limit !== null) ? { limit: limit, offset: offset } : {};
+    models.Charge.findAll(properties)
 	    .then(result => {
 	    	res.status(200).json(result);
 		})

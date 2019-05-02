@@ -1,23 +1,919 @@
 [
-    {
-        "model": "Charge",
-        "data": {
-            "description": "Suscripción Netflix",
-            "amount": 12
-        }
-    },
-    {
-        "model": "Charge",
-        "data": {
-            "description": "Suscripción HBO",
-            "amount": 10.99
-        }
-    },
-    {
-        "model": "Charge",
-        "data": {
-            "description": "Suscripción PSN",
-            "amount": 59.95
-        }
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Vetron",
+      "amount": 86.8839
     }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Fangold",
+      "amount": 1468.3453
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Bezal",
+      "amount": 1454.6031
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Euron",
+      "amount": 1341.0442
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Tropolis",
+      "amount": 1054.2154
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Olympix",
+      "amount": 1899.9215
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Viagrand",
+      "amount": 993.6594
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Tsunamia",
+      "amount": 462.4862
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Comcubine",
+      "amount": 1582.5776
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Uplinx",
+      "amount": 1812.2552
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Ginkogene",
+      "amount": 1662.1425
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Zillanet",
+      "amount": 138.4754
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Buzzmaker",
+      "amount": 930.9997
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Magmina",
+      "amount": 1481.7415
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Klugger",
+      "amount": 561.2592
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Bitendrex",
+      "amount": 386.8496
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Oatfarm",
+      "amount": 547.5688
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Nimon",
+      "amount": 1472.0944
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Viocular",
+      "amount": 411.2057
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Amtas",
+      "amount": 1901.3265
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Enerforce",
+      "amount": 377.8054
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Cubix",
+      "amount": 256.7719
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Comtext",
+      "amount": 1323.3405
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Powernet",
+      "amount": 720.8496
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Cedward",
+      "amount": 1800.8876
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Ezentia",
+      "amount": 1113.632
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Netility",
+      "amount": 1203.1835
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Xyqag",
+      "amount": 390.661
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Dymi",
+      "amount": 551.2922
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Realysis",
+      "amount": 1864.012
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Terrasys",
+      "amount": 503.1235
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Utara",
+      "amount": 1179.9069
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Quonata",
+      "amount": 1994.2951
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Eyewax",
+      "amount": 1872.3341
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Greeker",
+      "amount": 431.2808
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Ersum",
+      "amount": 1816.0625
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Chorizon",
+      "amount": 1402.9091
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Aquoavo",
+      "amount": 662.8791
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Buzzness",
+      "amount": 258.8467
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Ovation",
+      "amount": 593.9916
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Twiist",
+      "amount": 1568.2012
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Zensure",
+      "amount": 1328.136
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Centice",
+      "amount": 1604.5825
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Apex",
+      "amount": 1212.7039
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Isoswitch",
+      "amount": 1636.2601
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Anarco",
+      "amount": 1800.5202
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Liquidoc",
+      "amount": 1180.9797
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Isbol",
+      "amount": 846.3614
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Urbanshee",
+      "amount": 129.6603
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Zoxy",
+      "amount": 447.0448
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Quarx",
+      "amount": 1500.9221
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Assistix",
+      "amount": 1831.2434
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Zanymax",
+      "amount": 705.1533
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Vertide",
+      "amount": 499.5559
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Tingles",
+      "amount": 796.0343
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Brainquil",
+      "amount": 1167.8771
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Gluid",
+      "amount": 36.0835
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Daycore",
+      "amount": 1467.4041
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Obliq",
+      "amount": 1712.0871
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Petigems",
+      "amount": 1641.9512
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Quility",
+      "amount": 1186.7685
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Vantage",
+      "amount": 1293.2954
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Namegen",
+      "amount": 1761.288
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Unisure",
+      "amount": 1904.5854
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Orbean",
+      "amount": 399.603
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Temorak",
+      "amount": 1644.9814
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Vurbo",
+      "amount": 1068.1882
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Lunchpod",
+      "amount": 1785.8065
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Valpreal",
+      "amount": 513.3586
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Uncorp",
+      "amount": 256.5271
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Ovium",
+      "amount": 421.4578
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Kage",
+      "amount": 1255.4779
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Everest",
+      "amount": 1646.5167
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Vixo",
+      "amount": 1181.2894
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Exoswitch",
+      "amount": 1330.0731
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Entogrok",
+      "amount": 1238.093
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Telpod",
+      "amount": 603.9877
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Coash",
+      "amount": 372.6329
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Nutralab",
+      "amount": 256.0941
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Adornica",
+      "amount": 1996.3365
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Soprano",
+      "amount": 781.4739
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Thredz",
+      "amount": 371.7126
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Futurize",
+      "amount": 355.0384
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Isosure",
+      "amount": 377.494
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Zeam",
+      "amount": 287.0822
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Avit",
+      "amount": 679.9837
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Rugstars",
+      "amount": 659.5292
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Elentrix",
+      "amount": 1259.3053
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Permadyne",
+      "amount": 655.2417
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Zyple",
+      "amount": 1041.0405
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Bitrex",
+      "amount": 1539.7005
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Pivitol",
+      "amount": 1576.1723
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Gleamink",
+      "amount": 562.3134
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Opportech",
+      "amount": 736.8619
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Mantro",
+      "amount": 1083.4253
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Emoltra",
+      "amount": 1257.9448
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Imkan",
+      "amount": 973.1389
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Pearlesex",
+      "amount": 1623.714
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Nikuda",
+      "amount": 953.0234
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Uneeq",
+      "amount": 260.4833
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Oronoko",
+      "amount": 159.1967
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Geekology",
+      "amount": 1124.6378
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Tripsch",
+      "amount": 1100.0284
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Zillactic",
+      "amount": 627.4562
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Omatom",
+      "amount": 469.5848
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Deminimum",
+      "amount": 1605.9575
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Pyramis",
+      "amount": 913.1138
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Quadeebo",
+      "amount": 1548.0948
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Inventure",
+      "amount": 66.7269
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Extro",
+      "amount": 1013.8733
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Dognosis",
+      "amount": 1491.5488
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Slofast",
+      "amount": 538.2484
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Geekus",
+      "amount": 670.5163
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Columella",
+      "amount": 1358.545
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Vicon",
+      "amount": 1990.6865
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Recrisys",
+      "amount": 1060.8523
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Callflex",
+      "amount": 109.7519
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Zorromop",
+      "amount": 1282.1238
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Bizmatic",
+      "amount": 399.6048
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Bleeko",
+      "amount": 1908.7099
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Optyk",
+      "amount": 698.9085
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Grok",
+      "amount": 1258.937
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Bisba",
+      "amount": 1108.02
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Moltonic",
+      "amount": 84.998
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Zilla",
+      "amount": 662.0824
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Digirang",
+      "amount": 984.9634
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Nexgene",
+      "amount": 1567.2351
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Remold",
+      "amount": 611.4794
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Codact",
+      "amount": 1755.6305
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Evidends",
+      "amount": 649.7464
+    }
+  },
+  {
+    "model": "Charge",
+    "data": {
+      "description": "Exiand",
+      "amount": 1336.9776
+    }
+  }
 ]
