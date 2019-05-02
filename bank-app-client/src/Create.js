@@ -47,7 +47,7 @@ class Create extends Component {
     if (this.state.redirectToNewPage){
       return (
         <Redirect to={{
-          pathname: '/list'
+          pathname: '/charges'
         }}/>
       );
     } else {
@@ -61,7 +61,7 @@ class Create extends Component {
               <form onSubmit={this.handleSubmit}>
                 <div className="form-group">
                   <label>Descripción</label>
-                  <input type="text" className="form-control" name="description" id="description" placeholder="Introduzca una descripción" required="required" value={this.state.description} onChange={this.handleInputChange} maxlength="255"/>
+                  <input type="text" className="form-control" name="description" id="description" placeholder="Introduzca una descripción" required="required" value={this.state.description} onChange={this.handleInputChange} maxLength="255"/>
                 </div>
                 <div className="form-group">
                   <label>Cantidad</label>

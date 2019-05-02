@@ -18,6 +18,20 @@ class Home extends Component {
       .catch(err => this.setState({ err }));
   }
 
+  handleDelete(id) {
+    fetch('/api/charges/' + id, {
+        method: 'DELETE'
+    }).then(res => {
+        this.removeCharge(id);
+        return res;
+    }).catch(err => err);
+  }
+
+  removeCharge(id) {
+    let currentCharges = this.state.charges.filter(function(currentCharge) { return currentCharge.id !== id });
+    this.setState({ charges: currentCharges });
+  }
+
   render() {
     if (this.state.err) {
       return (
@@ -47,6 +61,14 @@ class Home extends Component {
                     <tr key={charge.id}>
                       <td>{charge.description}</td>
                       <td className="text-danger">- {charge.amount} €</td>
+                      <td>
+                        <Link to={`/charges/show/${charge.id}`}>
+                          <button className="btn btn-default">Detalle</button>
+                        </Link>
+                      </td>
+                      <td>
+                        <button onClick={() => { this.handleDelete(charge.id) }} className="btn btn-danger">Borrar</button>
+                      </td>
                     </tr>
                   )}
                 </tbody>
@@ -54,8 +76,8 @@ class Home extends Component {
             </div>
           </div>
           <div className="container-fluid">
-            <Link to="/create">
-              <div className="btn btn-success" type="button"><span className="glyphicon glyphicon-plus"></span> Nuevo cargo</div>
+            <Link to="/charges/new">
+              <button className="btn btn-success" type="button">Nuevo cargo</button>
             </Link>
           </div>
         </div>

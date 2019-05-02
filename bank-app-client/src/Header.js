@@ -7,6 +7,7 @@ import {
 
 import Home from './Home';
 import Create from './Create';
+import Show from './Show';
 
 class Header extends Component {
   	render() {
@@ -16,13 +17,14 @@ class Header extends Component {
 				  	<nav className="navbar navbar-default">
 				  		<div className="container-fluid">
 				  			<div className="navbar-header">
-				  				<Link className="navbar-brand" to="/list">Home</Link>
+				  				<Link className="navbar-brand" to="/charges">Home</Link>
 				  			</div>
 				  		</div>
 				    </nav>
 				    <div className="container-fluid">
-				    	<Route path="/list" component={Home}/>
-				      	<Route path="/create" component={Create}/>
+				    	<Route exact path="/charges" component={Home}/>
+				      	<Route exact path="/charges/new" component={Create}/>
+				      	<Route exact path="/charges/show/:chargeId" component={Show} />
 				    </div>
 			    </div>
 			  </Router>

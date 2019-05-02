@@ -15,7 +15,7 @@ router.get('/api/charges', function(req, res){
 router.get('/api/charges/:chargeId', function(req, res){
     models.Charge.findByPk(req.params.chargeId)
 	    .then(result => {
-	    	result == null ? res.status(404).json({ status: 404, message: "Not found"}) : res.status(200).json(result);
+	    	result == null ? res.status(404).json({ status: 404, message: "Not found"}) : res.status(200).json(result.toJSON());
 		})
 		.catch(err => {
 			handleError(err, res);
